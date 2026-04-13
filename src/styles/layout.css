@@ -1,0 +1,70 @@
+/* Layout Shell */
+.app {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  background: var(--bg-2);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  border-right: 1px solid var(--border);
+  flex-shrink: 0;
+  z-index: 10;
+}
+
+.sidebar--collapsed {
+  width: 60px;
+}
+
+/* Main Area */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0;
+  background: var(--bg);
+}
+
+/* Canvas Panel */
+.canvas {
+  width: 50%;
+  max-width: 800px;
+  min-width: 400px;
+  background: var(--bg-2);
+  border-left: 1px solid var(--border);
+  display: none;
+  flex-direction: column;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+  z-index: 20;
+}
+
+.app--canvas .canvas {
+  display: flex;
+  animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Messages area */
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0; /* padding handled inside */
+  scroll-behavior: smooth;
+}
+
+.messages__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 24px 20px 180px; /* Space for composer pill */
+}

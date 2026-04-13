@@ -1,0 +1,55 @@
+:root {
+  /* Dark mode - Claude inspired */
+  --bg: #2b2a27;       /* Warm very dark grey */
+  --bg-2: #303030;     /* Slightly lighter for panels */
+  --bg-3: #383734;     /* Hover states */
+  --bg-4: #43413e;     /* Borders / active elements */
+  
+  --fg: #e8e0d4;       /* Warm off-white */
+  --fg-dim: #9a958b;   /* Dimmed text */
+  --fg-dim-2: #757169; /* Very dimmed */
+  
+  --accent: #d97757;   /* Claude terracotta */
+  --accent-dim: #c26143;
+  --accent-glow: rgba(217, 119, 87, 0.15);
+  --accent-bg: #443731; /* Subtle terracotta background */
+  
+  --border: #43413e;
+  --border-2: #4d4b47;
+  
+  --ok: #79a66d;
+  --warn: #c9a54a;
+  --err: #b54a4a;
+  
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-pill: 24px;
+  
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.1);
+  --shadow-md: 0 8px 16px rgba(0,0,0,0.15);
+  --shadow-lg: 0 16px 32px rgba(0,0,0,0.25);
+  
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', Courier, monospace;
+}
+
+[data-theme="light"] {
+  --bg: #fdfaf5;       /* Claude light mode background */
+  --bg-2: #f4f0ea;     /* Sidebar / panels */
+  --bg-3: #eae5df;     /* Hover */
+  --bg-4: #dfd9d2;     /* Borders */
+  
+  --fg: #1a1715;       /* Deep warm brown/black */
+  --fg-dim: #6b6660;
+  --fg-dim-2: #8f8a84;
+  
+  --accent: #c96442;
+  --accent-dim: #b35133;
+  --accent-glow: rgba(201, 100, 66, 0.1);
+  --accent-bg: #f5ece9;
+  
+  --border: #dfd9d2;
+  --border-2: #c9c3bc;
+}
